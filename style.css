@@ -1,0 +1,143 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     height: max-content; 
+    margin: 0;
+}
+
+.quiz-container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.quiz-container:hover {
+    transform: scale(1.03); /* Slightly enlarge the quiz container on hover */
+}
+
+h2 {
+    font-size: 24px;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#question-number {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#meaning, #partOfSpeech {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+#timer {
+    font-size: 32px;
+    color: #FF4500; /* Timer color */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+#results {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#score {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+#answers, #correctAnswers {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+h3 {
+    color: #4CAF50;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#retakeBtn, #endQuizBtn {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #FF5722; /* Retake and end quiz button color */
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+#retakeBtn:hover, #endQuizBtn:hover {
+    background-color: #e64a19;
+}
+
+@media (max-width: 400px) {
+    .quiz-container {
+        width: 90%; /* Ensure it takes up more width on smaller screens */
+    }
+}

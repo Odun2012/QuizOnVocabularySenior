@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spelling Bee Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="question-number">Question: <span id="question-number-span">1</span></div>
+        <div id="meaning"></div>
+        <div id="partOfSpeech"></div>
+        <div id="timer">25</div>
+        <input type="text" id="userAnswer" placeholder="Type your answer here" />
+        <button id="submitBtn">Submit Answer</button>
+        <button id="nextBtn" style="display: none;">Next Question</button>
+
+        <div id="results" style="display: none;">
+            <h2>Your Results</h2>
+            <div id="score"></div>
+            <div id="answers">
+                <h3>Your Answers:</h3>
+            </div>
+            <div id="correctAnswers">
+                <h3>Correct Answers:</h3>
+            </div>
+            <button id="retakeBtn">Retake Quiz</button>
+            <button id="endQuizBtn">End Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
