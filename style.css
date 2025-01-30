@@ -18,6 +18,11 @@ body {
     text-align: center;
     transition: all 0.3s ease;
 }
+#MSC{
+    font-weight: bold;
+    background-color: white;
+    color: green;
+}
 
 .quiz-container:hover {
     transform: scale(1.03); /* Slightly enlarge the quiz container on hover */
